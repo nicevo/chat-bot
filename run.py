@@ -1,4 +1,7 @@
 #!/usr/bin/python
 from app import application
 
-application.run(debug=True)
+try:
+    application.run(debug=True, threaded=True)
+except Exception as e:
+    print e
