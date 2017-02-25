@@ -15,6 +15,8 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
 
 1.  If you have _not completed Challenge 2_ and just want to do Challenge 3 right away:
 
+    1.  Do the "Get started with Heroku" steps from [Challenge 2](./challenge-heroku.md).
+        
     1.  Download and extract https://github.com/mikaelsvensson/helloworld-klarna/archive/challenge-4-kik.zip 
         to a new folder, for example ```helloworld-klarna```.
 

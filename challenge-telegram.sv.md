@@ -13,6 +13,8 @@ Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot fö
 
 1.  Om du _inte har gjort Utmaning 2_ och bara vill göra Utmaning 3 direkt:
 
+    1.  Gör stegen "Kom igång med Heroku" från [Utmaning 2](./challenge-heroku.sv.md).
+    
     1.  Ladda ner och packa upp https://github.com/mikaelsvensson/helloworld-klarna/archive/challenge-4-telegram.zip 
         till en ny mapp, exempelvis ```helloworld-klarna```.
 
