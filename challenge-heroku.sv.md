@@ -87,3 +87,9 @@ Loggen kan se ut något i den här stilen...
 * Python på Heroku: https://devcenter.heroku.com/articles/getting-started-with-python
 * "Fuskpapper" för Heroku-verktygen: http://ricostacruz.com/cheatsheets/heroku.html
 * Mer information om Heroku-verktygen: https://devcenter.heroku.com/articles/using-the-cli
+
+## Gå vidare
+
+[Gå till instruktionerna för Utmaning 3 - Kik](./challenge-kik.sv.md)
+
+[Gå till instruktionerna för Utmaning 3 - Telegram](./challenge-telegram.sv.md)

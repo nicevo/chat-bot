@@ -30,3 +30,7 @@ sedan på ```views.py```.
  
 Vi använder Flask, ett webbtjänstbibliotek för Python, och vill du veta mer kan du hitta en ordentlig 
 genomgång på https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world.
+
+## Gå vidare
+
+[Gå till instruktionerna för Utmaning 2](./challenge-heroku.sv.md)

@@ -30,3 +30,7 @@ look at ```views.py```.
  
 We’re using Flask, a web service library for Python, and a lot of information about it can be found on 
 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world.
+
+## The Next Step
+
+[Go to instructions for Challenge 2](./challenge-heroku.md)

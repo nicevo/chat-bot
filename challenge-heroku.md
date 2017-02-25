@@ -87,3 +87,9 @@ The logs might show something like this…
 * Python on Heroku: https://devcenter.heroku.com/articles/getting-started-with-python
 * Heroku CLI cheat sheet: http://ricostacruz.com/cheatsheets/heroku.html
 * Heroku CLI usage: https://devcenter.heroku.com/articles/using-the-cli
+
+## The Next Step
+
+[Go to instructions for Challenge 3 - Kik](./challenge-kik.md)
+
+[Go to instructions for Challenge 3 - Telegram](./challenge-telegram.md)
