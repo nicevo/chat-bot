@@ -9,17 +9,6 @@ There are some things in common regardless of whether or not you go for Kik or T
 *   We don’t specify our bot’s credentials in the source code (that way we can publish our source code without divulging the bot’s credentials, i.e. its secret password).
 *   We make sure that the application, i.e. the bot, starts by telling the app company (i.e. Kik or Telegram) that it is alive and can receive messages.
 
-# Challenges
-
-We don't like the words "assignments" or "tasks". Talking about "challenges" sounds more fun.
-
-This tutorial on chat bot development consists of three challenges:
-
-*   Challenge 1: Try running a web service on your own computer. This is just to make sure you have all 
-    the necessary tools installed on your computer.
-*   Challenge 2: Create a web service in "the cloud" and which can be used by anyone in the world.
-*   Challenge 3: Create a chat bot, which is actually a web service, which lives in "the cloud". It is
-    either a Kik bot or a Telegram bot.
 
 # Software Requirements
 
@@ -36,3 +25,25 @@ Tools you don’t need at this point but might be useful when you develop more
 complicated chat bots (or any other complicated project for that matter):
 *   Git from https://git-scm.com/downloads.
 *   Setuptools and Virtualenv, as per https://packaging.python.org/installing.
+
+# Challenges
+
+We don't like the words "assignments" or "tasks". Talking about "challenges" sounds more fun.
+
+This tutorial on chat bot development consists of three challenges:
+
+*   Challenge 1: Try running a web service on your own computer. This is just to make sure you have all 
+    the necessary tools installed on your computer.
+    
+    [Go to instructions for Challenge 1](./challenge-localhost.md)
+
+*   Challenge 2: Create a web service in "the cloud" and which can be used by anyone in the world.
+    
+    [Go to instructions for Challenge 2](./challenge-heroku.md)
+
+*   Challenge 3: Create a chat bot, which is actually a web service, which lives in "the cloud". It is
+    either a Kik bot or a Telegram bot.
+    
+    [Go to instructions for Challenge 3 - Kik](./challenge-kik.md)
+    
+    [Go to instructions for Challenge 3 - Telegram](./challenge-telegram.md)
