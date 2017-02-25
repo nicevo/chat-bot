@@ -9,6 +9,8 @@ På https://github.com/mikaelsvensson/helloworld-klarna/tree/challenge-1 hittar 
 för övningen. Ja, vi fuskar lite genom att inte skriva någon kod själva men det är mest för att 
 komma igång.
 
+## Steg för steg
+
 1.  Ladda ner källkoden härifrån: https://github.com/mikaelsvensson/helloworld-klarna/archive/challenge-1.zip.
 1.  Packa upp zip-filen i en ny mapp, exempelvis ```helloworld-klarna```.
 1.  Öppna en kommandoprompt och gå till din projektmapp.
@@ -24,7 +26,9 @@ komma igång.
 
 Vi har nu en webbtjänst snurrandes på vår egen dator. Visst, den kan bara användas av någon som sitter 
 vid just denna dator men det fixar vi i nästa steg.
- 
+
+## En närmare titt
+
 Ta lite tid och undersök källkoden. Börja med ```run.py```, gå vidare till ```app/__init__.py``` och titta 
 sedan på ```views.py```.
  

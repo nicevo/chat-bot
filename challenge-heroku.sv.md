@@ -2,33 +2,44 @@
  
 För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) ska kunna avnjutas av alla i hela världen så ska vi använda en gratis molntjänst som heter Heroku. Det finns betaltjänster på Heroku men gratisvarianten räcker mer än väl för våra behov.
 
-1.  Skapa dig ett gratis Heroku-konto på https://signup.heroku.com/dc
+## Steg för steg
 
-1.  Installera Heroku-verktygen från 
-    https://devcenter.heroku.com/articles/heroku-cli
-    (vi kommer använda detta för att arbeta med vår Heroku-app)
+1.  Kom igång med Heroku, molnplattformen vi kommer använda oss av:
 
-1.  Installera tillägget Heroku Builds för Heroku-verktygen (används för att ladda upp vår app till Heroku):
+    1.  Skapa dig ett gratis Heroku-konto på https://signup.heroku.com/dc
     
-        heroku plugins:install heroku-builds
-
-## Ändringar jämfört med förra uppgiften:
-
-1.  Skapa en fil som heter Procfile (ingen filändelse, bara “Procfile”) med följande innehåll:
+    1.  Installera Heroku-verktygen från 
+        https://devcenter.heroku.com/articles/heroku-cli
+        (vi kommer använda detta för att arbeta med vår Heroku-app)
     
-        web: gunicorn app:application --log-file -
+    1.  Installera tillägget Heroku Builds för Heroku-verktygen (används för att ladda upp vår app till Heroku):
         
-    Notera “-” sist på raden. Notera också att Procfile måste finns i "roten" på ditt projekt. 
-    Procfile berättar för Heroku hur vår webbtjänst startas.
+            heroku plugins:install heroku-builds
 
-1.  Ändra ```requirements.txt``` så att den har dessa två rader:
+1.  Om du _inte har gjort Utmaning 1_ och bara vill göra Utmaning 2 direkt:
 
-        Flask
-        gunicorn
+    1.  Ladda ner och packa upp https://github.com/mikaelsvensson/helloworld-klarna/archive/challenge-2.zip 
+        till en ny mapp, exempelvis ```helloworld-klarna```.
 
-1.  Skapa en tom file som heter .gitignore i "roten" på ditt projekt (notera punkten i början på filnamnet). Vi behöver denna fil pga. en bugg i verktygt Heroku Builds plugin (som alltså kräver att det finns en fil med just detta namn). På en Mac kan du skapa filen med det här terminalkommandot:
+1.  Om du _redan är klar med Utmaning 1_ och bara vill fortsätta med det projektet:
 
-        touch .gitignore
+    1.  Skapa en fil som heter Procfile (ingen filändelse, bara “Procfile”) med följande innehåll:
+        
+            web: gunicorn app:application --log-file -
+            
+        Notera “-” sist på raden. Notera också att Procfile måste finns i "roten" på ditt projekt. 
+        Procfile berättar för Heroku hur vår webbtjänst startas.
+    
+    1.  Ändra ```requirements.txt``` så att den har dessa två rader:
+    
+            Flask
+            gunicorn
+    
+    1.  Skapa en tom file som heter .gitignore i "roten" på ditt projekt (notera punkten i början på filnamnet). Vi behöver denna fil pga. en bugg i verktygt Heroku Builds plugin (som alltså kräver att det finns en fil med just detta namn). På en Mac kan du skapa filen med det här terminalkommandot:
+    
+            touch .gitignore
+
+1.  Öppna en terminal (kommandoprompt) i din projektmapp.
 
 1.  Skapa en ny applikation på Heroku mha. detta kommando:
 
@@ -81,7 +92,9 @@ Loggen kan se ut något i den här stilen...
     2017-02-18T15:04:43.601251+00:00 heroku[web.1]: State changed from starting to up
     2017-02-18T15:04:43.733380+00:00 heroku[web.1]: Process exited with status 3
 
-## Mer läsning för den nyfikne
+## En närmare titt
+
+Mer läsning för den nyfikne:
 
 * Herokus arkitektur och struktur: https://devcenter.heroku.com/categories/heroku-architecture
 * Python på Heroku: https://devcenter.heroku.com/articles/getting-started-with-python

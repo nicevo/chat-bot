@@ -2,33 +2,44 @@
  
 In order to make our fancy web service (which still only tells the time of the day) available to everyone in the entire world to enjoy we will use the free web service hosting service Heroku. There are paid hosting service on Heroku as well but the free service is more than enough for our needs.
 
-1.  Sign up to get free Heroku account on https://signup.heroku.com/dc
+## Step By Step
 
-1.  Install the Heroku CLI from 
-    https://devcenter.heroku.com/articles/heroku-cli 
-    (we use this to manage our Heroku applications)
+1.  Get started with Heroku, the cloud platform we will be using:
 
-1.  Install the Heroku Builds plugin for the Heroku CLI (we use this to upload our applications to Heroku):
+    1.  Sign up to get free Heroku account on https://signup.heroku.com/dc
     
-        heroku plugins:install heroku-builds
-
-## Things changed compared to the previous challenge
-
-1.  Create a file called Procfile (no extension, just the name “Procfile”) with this content:
+    1.  Install the Heroku CLI from 
+        https://devcenter.heroku.com/articles/heroku-cli 
+        (we use this to manage our Heroku applications)
     
-        web: gunicorn app:application --log-file -
+    1.  Install the Heroku Builds plugin for the Heroku CLI (we use this to upload our applications to Heroku):
         
-    Note the “-” and the end of the line. Also note that Procfile must be in the root of your project.
-    This file tells Heroku how your application is started.
+            heroku plugins:install heroku-builds
 
-1.  Modify ```requirements.txt``` so that is has these two lines of code:
-    
-        Flask
-        gunicorn
+1.  If you have _not completed Challenge 1_ and just want to do Challenge 2 right away:
+
+    1.  Download and extract https://github.com/mikaelsvensson/helloworld-klarna/archive/challenge-2.zip 
+        to a new folder, for example ```helloworld-klarna```.
+
+1.  If you have _already completed Challenge 1_ and just want to continue on that project:
+
+    1.  Create a file called Procfile (no extension, just the name “Procfile”) with this content:
         
-1.  Create an empty file named .gitignore the root of your project (note the initial period character). We need this because of a bug in the Heroku Builds plugin (which requires that a file with this exact name exists). On a Mac you can create this file using this console command:
+            web: gunicorn app:application --log-file -
+            
+        Note the “-” and the end of the line. Also note that Procfile must be in the root of your project.
+        This file tells Heroku how your application is started.
     
-        touch .gitignore
+    1.  Modify ```requirements.txt``` so that is has these two lines of code:
+        
+            Flask
+            gunicorn
+            
+    1.  Create an empty file named .gitignore the root of your project (note the initial period character). We need this because of a bug in the Heroku Builds plugin (which requires that a file with this exact name exists). On a Mac you can create this file using this console command:
+        
+            touch .gitignore
+    
+1.  Open a console (terminal window) in your project folder.
 
 1.  Tell Heroku you want to publish a new application by running this in a console:
     
@@ -81,7 +92,9 @@ The logs might show something like this…
     2017-02-18T15:04:43.601251+00:00 heroku[web.1]: State changed from starting to up
     2017-02-18T15:04:43.733380+00:00 heroku[web.1]: Process exited with status 3
 
-## More reading
+## A Closer Look
+
+More reading about Heroku:
 
 * Heroku Architecture: https://devcenter.heroku.com/categories/heroku-architecture
 * Python on Heroku: https://devcenter.heroku.com/articles/getting-started-with-python

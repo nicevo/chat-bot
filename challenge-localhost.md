@@ -1,4 +1,4 @@
-# Utmaning 1: Local web service
+# Challenge 1: Local web service
 
 The first step makes sure that we know the basics of how to develop web services using Python. 
 This will only require Python (and Pip).
@@ -8,6 +8,8 @@ We will start with a sample project just to see that you have all the required l
 On https://github.com/mikaelsvensson/helloworld-klarna/tree/challenge-1 you find the complete source 
 code for this exercise. Yes, we are cheating a bit by not writing any code ourselves but this is mostly 
 to get started. 
+
+## Step By Step
 
 1.  Download the source code using this link: https://github.com/mikaelsvensson/helloworld-klarna/archive/challenge-1.zip.
 1.  Extract the zip file to a new folder, such as ```helloworld-klarna```.
@@ -24,7 +26,9 @@ to get started.
 
 We now have a web service running on your own computer. Sure, it can only be used by someone sitting at 
 your computer but we’ll fix that in the next step.
- 
+
+## A Closer Look
+
 Take some time to explore the source code. Start with ```run.py```, move on to ```app/__init__.py``` and then have a 
 look at ```views.py```.
  
