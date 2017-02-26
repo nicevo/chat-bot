@@ -1,6 +1,8 @@
 # Challenge 2: Publish to Heroku
  
-In order to make our fancy web service (which still only tells the time of the day) available to everyone in the entire world to enjoy we will use the free web service hosting service Heroku. There are paid hosting service on Heroku as well but the free service is more than enough for our needs.
+In order to make our fancy web service (which still only tells the time of the day) available to everyone in the 
+entire world to enjoy we will use the free web service hosting service Heroku. There are paid hosting service on Heroku 
+as well but the free service is more than enough for our needs.
 
 ## Step By Step
 
@@ -35,7 +37,11 @@ In order to make our fancy web service (which still only tells the time of the d
             Flask
             gunicorn
             
-    1.  Create an empty file named .gitignore the root of your project (note the initial period character). We need this because of a bug in the Heroku Builds plugin (which requires that a file with this exact name exists). On a Mac you can create this file using this console command:
+    1.  Create an empty file named ```.gitignore``` the root of your project (note the initial period 
+        character). We need this because of a bug in the Heroku Builds plugin (which requires that a 
+        file with this exact name exists). 
+        
+        On a Mac you can create this file using this console command:
         
             touch .gitignore
     

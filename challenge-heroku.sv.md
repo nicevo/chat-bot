@@ -1,6 +1,8 @@
 # Utmaning 2: Publicera på Heroku
  
-För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) ska kunna avnjutas av alla i hela världen så ska vi använda en gratis molntjänst som heter Heroku. Det finns betaltjänster på Heroku men gratisvarianten räcker mer än väl för våra behov.
+För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) ska kunna avnjutas av alla i hela världen så 
+ska vi använda en gratis molntjänst som heter Heroku. Det finns betaltjänster på Heroku men gratisvarianten räcker mer 
+än väl för våra behov.
 
 ## Steg för steg
 
@@ -35,7 +37,11 @@ För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) 
             Flask
             gunicorn
     
-    1.  Skapa en tom file som heter .gitignore i "roten" på ditt projekt (notera punkten i början på filnamnet). Vi behöver denna fil pga. en bugg i verktygt Heroku Builds plugin (som alltså kräver att det finns en fil med just detta namn). På en Mac kan du skapa filen med det här terminalkommandot:
+    1.  Skapa en tom file som heter ```.gitignore``` i "roten" på ditt projekt (notera punkten i början 
+        på filnamnet). Vi behöver denna fil pga. en bugg i verktygt Heroku Builds plugin (som alltså 
+        kräver att det finns en fil med just detta namn).
+    
+        På en Mac kan du skapa filen med det här terminalkommandot:
     
             touch .gitignore
 
