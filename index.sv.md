@@ -29,8 +29,11 @@ För att kunna hänga med den måste du har följande på din dator:
     Kontrollera detta genom att köra detta kommando i en termina/kommandotolk:
     
         pip --version
+        
+    _Om du inte har Pip så kan du ändå göra en bot, men du måste då hoppa över Utmaning 1._
 
-*   Any IDE with Python support, for example the community edition of PyCharm from https://www.jetbrains.com/pycharm/download. 
+*   Ett program för att redigera Python-kod, exempelvis gratisversionen av PyCharm som kan laddas 
+    ner från https://www.jetbrains.com/pycharm/download. 
 
 Verktyg som du inte behöver just nu men som kan vara användbara när du börjar utveckla
 mer avancerade botar (eller avancerade projekt i största allmänhet):

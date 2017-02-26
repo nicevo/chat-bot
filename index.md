@@ -29,8 +29,11 @@ You must have this installed on your computer:
     Verify this by executing this command in a terminal/console:
     
         pip --version
+        
+    _You can develop a bot without Pip but you have to skip Challenge 1_
 
-*   Any IDE with Python support, for example the community edition of PyCharm from https://www.jetbrains.com/pycharm/download. 
+*   Any IDE with Python support, for example the community edition of PyCharm 
+    from https://www.jetbrains.com/pycharm/download. 
 
 Tools you don’t need at this point but might be useful when you develop more 
 complicated chat bots (or any other complicated project for that matter):
