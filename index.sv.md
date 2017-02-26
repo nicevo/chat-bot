@@ -2,12 +2,24 @@
 
 Den här guiden hjälper dig att skapa en chatbot för Kik eller Telegram.
 
-Några saker är sant för både Kik- och Telegram-botar:
+Så här fungerar botar för både Kik och Telegram:
+
+1.  Skapa ett bot-konto på Kik eller Telegram. Under denna enkla process så får du en API-nyckel.
+    API-nyckeln är din bots lösenord när den pratar med app-plattformen (dvs. med Kik eller Telegram).
+1.  Programmera en webbtjänst som följer det kontrakt (s.k. "callback interface") som app-plattformen 
+    kräver att dess botar följer. Därefter publicerar du webbtjänsten "i molnet" (vi kommer använda Heroku).
+1.  Alla meddelanden som skickas till din bot kommer att levereras till din webbtjänst.
+
+Några saker är sant för både Kik- och Telegram-botars webbtjänster:
 
 *   Vi använder Python-bibliotek för att ta hand om "de komplicerade sakerna".
 *   Vi skapar en webbtjänst som tar emot alla meddelanden som skickas till vår bot.
 *   Vi anger inte vår bots lösenord (API-nyckeln) i källkoden (på detta sätt kan vi ge vår källkod till vem som helst utan att avslöja några hemligheter).
 *   Boten startar alltid med att berätta för app-företaget (dvs. Kik eller Telegram) att den lever och kan ta emot meddelanden.
+
+Eftersom Kik och Telegram ändå är olika appar så finns det också flera saker som skiljer när du ska
+programmera en bot för den ena eller andra appen. Av den anledningen så skiljer sig instruktionerna
+beroende på vilken app du vill att din bot ska stödja.
 
 # Systemkrav
 

@@ -2,6 +2,14 @@
 
 This tutorial enables you to develop a chat bot for either Kik or Telegram.
 
+This is how bots work for both Kik and Telegram:
+
+1.  Create a bot account for Kik or Telegram. During this simple process you will get an API key. 
+    The API key is the bot's password when talking to the messaging platform (i.e. Kik or Telegram).
+1.  Implement the messaging platform’s bot callback interface as a web service. You then publish 
+    this web service on a cloud provider (we will use Heroku in this tutorial).
+1.  All messages sent to your bot will be delivered to your web service.
+
 There are some things in common regardless of whether or not you go for Kik or Telegram:
 
 *   We use a Python library which takes care of “the complicated stuff”.
@@ -9,6 +17,9 @@ There are some things in common regardless of whether or not you go for Kik or T
 *   We don’t specify our bot’s credentials in the source code (that way we can publish our source code without divulging the bot’s credentials, i.e. its secret password).
 *   We make sure that the application, i.e. the bot, starts by telling the app company (i.e. Kik or Telegram) that it is alive and can receive messages.
 
+Since Kik and Telegram are different apps there are some things that will be different when you develop
+a bot for one or the other. For this reason the instructions will differ depending on the app you
+want to support.
 
 # Software Requirements
 
