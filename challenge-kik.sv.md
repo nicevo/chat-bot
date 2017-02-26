@@ -1,4 +1,4 @@
-# Berätta för chattappföretaget att du finns
+# Utmaning 3: Berätta för chattappföretaget att du finns
  
 Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot för deras plattform (dvs. deras app), annars kommer användarna inte kunna hitta boten i appen.
 

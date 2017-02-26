@@ -1,4 +1,4 @@
-# Let the app company know you exist
+# Challenge 3: Let the app company know you exist
 
 We now need to tell Kik or Telegram that we want to develop a bot for their platform (a.k.a. their app), otherwise users will not be able to find out bot in the app.
 
