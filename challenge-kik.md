@@ -35,14 +35,12 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
 1.  Store your Kik bot credentials (bot username and API key found on https://dev.kik.com/#/engine) in your 
     Heroku application by entering these commands in your terminal:
     
-        heroku config:set KIK_BOT_USERNAME=your-bot-username
-        heroku config:set KIK_BOT_APIKEY=your-bot-api-key
+        heroku config:set KIK_BOT_USERNAME=your-bot-username --app NAME_OF_YOUR_HEROKU_APPLICATION
+        heroku config:set KIK_BOT_APIKEY=your-bot-api-key --app NAME_OF_YOUR_HEROKU_APPLICATION
  
-    Add ```--app A_NAME_OF_YOUR_CHOICE``` at the end of the above commands if you have multiple applications in your Heroku account.
-
 1.  Re-deploy to Heroku using the same command as before:
 
-        heroku builds:create -a A_NAME_OF_YOUR_CHOICE
+        heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
  
 You should now be able to find your bot in Kik by searching for it using the name you sent to Botsworth 
 earlier. Start chatting with it and verify that it sends back everything you send to it.
@@ -52,4 +50,4 @@ project is basically a copy of https://kik.readthedocs.io/en/latest/user.html#ex
 
 No response from the bot? You can look at the logs using this command:
 
-    heroku logs -t --app A_NAME_OF_YOUR_CHOICE
+    heroku logs -t --app NAME_OF_YOUR_HEROKU_APPLICATION

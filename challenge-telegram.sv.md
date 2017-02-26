@@ -44,13 +44,11 @@ Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot fö
 
 1.  Spara din bots inloggningsuppgift (dvs. API-nyckeln du fick från BotFather) i din Heroku-applikation med detta kommando:
     
-        heroku config:set TELEGRAM_BOT_APIKEY=your-bot-api-key
+        heroku config:set TELEGRAM_BOT_APIKEY=your-bot-api-key --app NAMN_PÅ_DIN_HEROKU-APPLIKATION
     
-    Lägg till --app A_NAME_OF_YOUR_CHOICE i slutet av ovanstående kommando om du har flera Heroku-applikationer.
-
 1.  Ladda upp applikationen till Heroku precis som tidigare:
     
-        heroku builds:create -a A_NAME_OF_YOUR_CHOICE
+        heroku builds:create --app NAMN_PÅ_DIN_HEROKU-APPLIKATION
  
 Du bör nu kunna hitta din bit i Telegram genom att söka efter namnet du angav till BotFather 
 tidigare. Börja chatta med din bot och kolla så att du får tillbaka allt du skriver.

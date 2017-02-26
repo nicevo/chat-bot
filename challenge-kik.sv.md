@@ -35,14 +35,12 @@ Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot fö
 1.  Ange din bots inloggningsuppgifter (botens användarnamn och API-nyckel är de du tidigare hittade på
     https://dev.kik.com/#/engine) i din Heroku-applikation genom att köra följande kommandon:
     
-        heroku config:set KIK_BOT_USERNAME=your-bot-username
-        heroku config:set KIK_BOT_APIKEY=your-bot-api-key
+        heroku config:set KIK_BOT_USERNAME=your-bot-username --app NAMN_PÅ_DIN_HEROKU-APPLIKATION
+        heroku config:set KIK_BOT_APIKEY=your-bot-api-key --app NAMN_PÅ_DIN_HEROKU-APPLIKATION
  
-    Lägg till ```--app A_NAME_OF_YOUR_CHOICE``` i slutet av båda kommandona om du har flera Heroku-applikationer.
-
 1.  Ladda upp applikationen till Heroku precis som tidigare:
 
-        heroku builds:create -a A_NAME_OF_YOUR_CHOICE
+        heroku builds:create --app NAMN_PÅ_DIN_HEROKU-APPLIKATION
  
 Du bör nu kunna hitta din bot i Kik genom att söka efter namnet du angav till Botsworth tidigare. 
 Börja chatta med din bot och kolla så att du får tillbaka allt du skriver.
@@ -53,4 +51,4 @@ gör och som du hittar på https://kik.readthedocs.io/en/latest/user.html#exampl
 
 Inga svar från din bot? Kolla botens logg mha. detta kommando:
     
-    heroku logs -t --app A_NAME_OF_YOUR_CHOICE
+    heroku logs -t --app NAMN_PÅ_DIN_HEROKU-APPLIKATION

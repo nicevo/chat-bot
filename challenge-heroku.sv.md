@@ -43,7 +43,7 @@ För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) 
 
 1.  Skapa en ny applikation på Heroku mha. detta kommando:
 
-        heroku apps:create A_NAME_OF_YOUR_CHOICE
+        heroku apps:create NAMN_PÅ_DIN_HEROKU-APPLIKATION
     
     Några exempel:
     
@@ -52,10 +52,10 @@ För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) 
 
 1.  Kör det här kommandot för att ladda upp, och starta, din app:
     
-        heroku builds:create -a A_NAME_OF_YOUR_CHOICE
+        heroku builds:create --app NAMN_PÅ_DIN_HEROKU-APPLIKATION
 
 Du borde nu kunna öppna en webbläsare och få redan på vad klockan är genom att surfa till
-https://A_NAME_OF_YOUR_CHOICE.herokuapp.com/time.
+https://NAMN_PÅ_DIN_HEROKU-APPLIKATION.herokuapp.com/time.
 
 Om det inte fungerar kan du behöva köra dessa kommandon:
 
@@ -66,7 +66,7 @@ Vi har nu en publik webbtjänst som hela världen kan använda! Visst, det är i
 
 Pröva att ändra något i koden, exempelvis byta ut "time" mot "now", och ladda upp den nya versionen med samma kommando som tidigare:
     
-    heroku builds:create -a A_NAME_OF_YOUR_CHOICE
+    heroku builds:create --app NAMN_PÅ_DIN_HEROKU-APPLIKATION
 
 ## Felsöka ett problem
 
@@ -76,7 +76,7 @@ Många fel visas aldrig för användaren men loggas i applikationsloggen i Herok
 
 Du kan titta på loggar med det här kommandot:
 
-    heroku logs -t --app A_NAME_OF_YOUR_CHOICE
+    heroku logs -t --app NAMN_PÅ_DIN_HEROKU-APPLIKATION
 
 Loggen kan se ut något i den här stilen...
 

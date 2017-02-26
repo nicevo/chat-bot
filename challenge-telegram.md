@@ -44,13 +44,11 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
 
 1.  Store your Telegram bot credentials (i.e. the API key sent to you by BotFather) in your Heroku application by entering this command in your terminal:
     
-        heroku config:set TELEGRAM_BOT_APIKEY=your-bot-api-key
-
-    Add --app A_NAME_OF_YOUR_CHOICE at the end of the above command if you have multiple applications in your Heroku account.
+        heroku config:set TELEGRAM_BOT_APIKEY=your-bot-api-key --app NAME_OF_YOUR_HEROKU_APPLICATION
 
 1.  Re-deploy to Heroku using the same command as before:
     
-        heroku builds:create -a A_NAME_OF_YOUR_CHOICE
+        heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
  
 You should now be able to find your bot in Telegram by searching for it using the name you sent to 
 BotFather earlier. Start chatting with it and verify that it sends back everything you send to it.

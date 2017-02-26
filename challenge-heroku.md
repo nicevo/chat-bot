@@ -43,7 +43,7 @@ In order to make our fancy web service (which still only tells the time of the d
 
 1.  Tell Heroku you want to publish a new application by running this in a console:
     
-        heroku apps:create A_NAME_OF_YOUR_CHOICE
+        heroku apps:create NAME_OF_YOUR_HEROKU_APPLICATION
     
     Same examples:
     
@@ -52,10 +52,10 @@ In order to make our fancy web service (which still only tells the time of the d
         
 1.  Run this to deploy your application to Heroku:
     
-        heroku builds:create -a A_NAME_OF_YOUR_CHOICE
+        heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
 
 You should now be able open a browser and get the current time by visiting 
-https://A_NAME_OF_YOUR_CHOICE.herokuapp.com/time.
+https://NAME_OF_YOUR_HEROKU_APPLICATION.herokuapp.com/time.
 
 If it does not work you may have to run these two commands: 
     
@@ -66,7 +66,7 @@ We have a publicly available web service now! Sure, it’s not a bot yet but we�
 
 If one does a change to the code, for example renaming “time” to “now”, and redeploy:
     
-    heroku builds:create -a A_NAME_OF_YOUR_CHOICE
+    heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
 
 ## Troubleshooting a problem
 
@@ -76,7 +76,7 @@ Many problems are never shown to the user but are logged in the application log 
 
 You can look at the logs using this command:
 
-    heroku logs -t --app A_NAME_OF_YOUR_CHOICE
+    heroku logs -t --app NAME_OF_YOUR_HEROKU_APPLICATION
 
 The logs might show something like this…
 
