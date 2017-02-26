@@ -1,6 +1,7 @@
 # Challenge 3: Let the app company know you exist
 
-We now need to tell Kik or Telegram that we want to develop a bot for their platform (a.k.a. their app), otherwise users will not be able to find out bot in the app.
+We now need to tell Kik or Telegram that we want to develop a bot for their platform (a.k.a. their app), 
+otherwise users will not be able to find out bot in the app.
 
 ## Step By Step
 
@@ -9,7 +10,9 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
     1.  On computer: Go to https://dev.kik.com/ on your computer.
     1.  On phone: Scan the Kik code with the Kik app.
     1.  On phone: The user Botsworth will start chatting with you and ask you what the bot should be called.
-    1.  On computer: Click the Log in-button on Kik’s web page and scan the Kik code with the app. Then go to the account Configuration (still on your computer) to find your new bot’s API key (on https://dev.kik.com/#/engine).
+    1.  On computer: Click the Log in-button on Kik’s web page and scan the Kik code with the app. 
+        Then go to the account Configuration (still on your computer) to find your new bot’s API key 
+        (on https://dev.kik.com/#/engine). The API key is your bot's password.
     1.  On computer: Save the API key in a text file, for later use.
     1.  We’re now ready to start developing our Kik bot! Move on to the next step.
 
@@ -28,7 +31,9 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
     1.  Update ```requirements.txt```: Kik bot library added. We will be using the official Python package for Kik bots. 
         Make sure you have this line in your requirements.txt: ```kik==1.2.0```
     
-    1.  Update ```app/__init__.py```: Initialise the bot library with your own bot’s credentials and the address of our web service, i.e. the “callback address” to which Kik should send incoming messages. Change the webhook parameter to match your Heroku app name.
+    1.  Update ```app/__init__.py```: Initialise the bot library with your own bot’s credentials and the 
+        address of our web service, i.e. the “callback address” to which Kik should send incoming messages. 
+        Change the webhook parameter to match your Heroku app name.
     
     1.  Update ```app/views.py```: Defines functionality which takes care of the messages sent to our “callback address”.
 

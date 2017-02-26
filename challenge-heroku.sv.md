@@ -23,12 +23,12 @@ För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) 
 
 1.  Om du _redan är klar med Utmaning 1_ och bara vill fortsätta med det projektet:
 
-    1.  Skapa en fil som heter Procfile (ingen filändelse, bara “Procfile”) med följande innehåll:
+    1.  Skapa en fil som heter ```Procfile``` (ingen filändelse, bara “Procfile”) med följande innehåll:
         
             web: gunicorn app:application --log-file -
             
-        Notera “-” sist på raden. Notera också att Procfile måste finns i "roten" på ditt projekt. 
-        Procfile berättar för Heroku hur vår webbtjänst startas.
+        Notera “-” sist på raden. Notera också att ```Procfile``` måste finns i "roten" på ditt projekt. 
+        ```Procfile``` berättar för Heroku hur vår webbtjänst startas.
     
     1.  Ändra ```requirements.txt``` så att den har dessa två rader:
     

@@ -23,11 +23,11 @@ In order to make our fancy web service (which still only tells the time of the d
 
 1.  If you have _already completed Challenge 1_ and just want to continue on that project:
 
-    1.  Create a file called Procfile (no extension, just the name “Procfile”) with this content:
+    1.  Create a file called ```Procfile``` (no extension, just the name “Procfile”) with this content:
         
             web: gunicorn app:application --log-file -
             
-        Note the “-” and the end of the line. Also note that Procfile must be in the root of your project.
+        Note the “-” and the end of the line. Also note that ```Procfile``` must be in the root of your project.
         This file tells Heroku how your application is started.
     
     1.  Modify ```requirements.txt``` so that is has these two lines of code:

@@ -1,13 +1,15 @@
 # Challenge 3: Let the app company know you exist
  
-We now need to tell Kik or Telegram that we want to develop a bot for their platform (a.k.a. their app), otherwise users will not be able to find out bot in the app.
+We now need to tell Kik or Telegram that we want to develop a bot for their platform (a.k.a. their app), 
+otherwise users will not be able to find out bot in the app.
  
 1.  Tell Telegram you want to create a bot
 
     1.  On phone: Start Telegram.
     1.  On phone: Start chatting with the bot BotFather.
     1.  On phone: Answer BotFather’s questions.
-    1.  On phone: After a couple of questions you will get a message starting with “Done! Congratulations…”. This message will contain your API key.
+    1.  On phone: After a couple of questions you will get a message starting with “Done! Congratulations…”. 
+        This message will contain your API key (i.e. the password for your bot).
     1.  On computer: Save the API key in a text file, for later use.
     1.  We’re now ready to start developing our Telegram bot! Move on to the next step.
 
@@ -25,11 +27,15 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
 
     1.  Update ```app/__init__.py```: Initialise the bot library with your own bot’s credentials.
     
-    1.  Update ```app/views.py```: Defines functionality which takes care of the messages sent to our “callback address”. The sample code only returns what was sent, so it basically just verifies that the bot is alive.
+    1.  Update ```app/views.py```: Defines functionality which takes care of the messages sent to our 
+        “callback address”. The sample code only returns what was sent, so it basically just verifies 
+        that the bot is alive.
     
-    1.  Add ```init_webhook.py```: separate Python script used to tell Telegram about the address of our web service, i.e. the “callback address” to which Telegram should send incoming messages. Change the webhook parameter to match your Heroku app name.
+    1.  Add ```init_webhook.py```: separate Python script used to tell Telegram about the address of 
+        our web service, i.e. the “callback address” to which Telegram should send incoming messages. 
+        Change the ```webhook``` parameter to match your Heroku app name.
     
-    1.  Update ```Procfile```: Runs init_webhook.py and then starts the “chat bot webservice”.
+    1.  Update ```Procfile```: Runs ```init_webhook.py``` and then starts the “chat bot webservice”.
     
     1.  Add ```ssl-certificate.herokuapp-com.pem```: https certificate used to encrypt the messages.
 
@@ -40,7 +46,7 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
     
         twx.botapi==3.1.1
  
-1.  Open init_webhook.py and make sure the URL of your application name matches what is in the set_webhook call.
+1.  Open ```init_webhook.py``` and make sure the URL of your application name matches what is in the ```set_webhook``` call.
 
 1.  Store your Telegram bot credentials (i.e. the API key sent to you by BotFather) in your Heroku application by entering this command in your terminal:
     

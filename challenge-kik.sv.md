@@ -1,6 +1,7 @@
 # Utmaning 3: Berätta för chattappföretaget att du finns
  
-Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot för deras plattform (dvs. deras app), annars kommer användarna inte kunna hitta boten i appen.
+Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot för deras plattform 
+(dvs. deras app), annars kommer användarna inte kunna hitta boten i appen.
 
 ## Steg för steg
 
@@ -9,7 +10,9 @@ Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot fö
     1.  På dator: Gå till https://dev.kik.com/.
     1.  På telefon: Scanna Kik-koden på Kik-hemsidan.
     1.  På telefon: boten Botsworth kommer börja chatta med dig och fråga vad du vill att din bot ska heta.
-    1.  På dator: Klicka på Log in-knappen på Kiks hemsida och scanna Kik-koden med appen. Gå sedan till kontokonfigurationen (fortfarande på datorn) och leta upp din bots "API key" (på https://dev.kik.com/#/engine).
+    1.  På dator: Klicka på Log in-knappen på Kiks hemsida och scanna Kik-koden med appen. Gå sedan 
+        till kontokonfigurationen (fortfarande på datorn) och leta upp din bots "API key" 
+        (på https://dev.kik.com/#/engine). API-nyckeln är din bots lösenord.
     1.  På daton: Spara API-nyckeln i en textfil, så att vi kan använda den senare.
     1.  Vi är nu redo att börja utveckla vår Kik-bot! Gå vidare till nästa steg.
 
@@ -28,7 +31,9 @@ Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot fö
     1.  Uppdatera ```requirements.txt```: Rad för Kiks bot-bibliotek. Vi använder det officiella Python-biblioteket från 
         Kik. Se till så att du har denna rad i din requirements.txt: ```kik==1.2.0```
     
-    1.  Uppdatera ```app/__init__.py```: Här måste du initiera din bot med din bots användarnamn, din bots lösenord och din bots Heroku-address, dvs. den “callback address” som kommer ta emot alla inkommande meddelanden. Ändra webhook-parametern för att matcha namnet på din Heroku-applikation.
+    1.  Uppdatera ```app/__init__.py```: Här måste du initiera din bot med din bots användarnamn, din bots 
+        lösenord och din bots Heroku-address, dvs. den “callback address” som kommer ta emot alla 
+            inkommande meddelanden. Ändra webhook-parametern för att matcha namnet på din Heroku-applikation.
     
     1.  Uppdatera ```app/views.py```: Innehåller funktionaliteten som tar hand om alla inkommande meddelanden.
 
