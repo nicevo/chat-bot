@@ -22,7 +22,7 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
 
 3. If you have _already completed Challenge 2_ and just want to continue on that project:
 
-  1. Go to <https://github.com/mikaelsvensson/helloworld-klarna/tree/challenge-4-kik> and find "inspiration" for the next couple of steps. Copy and paste as much code as you think is needed.
+  1. Go to <https://github.com/nicevo/helloworld-klarna/tree/challenge-4-kik> and find "inspiration" for the next couple of steps. Copy and paste as much code as you think is needed.
 
   2. Update `requirements.txt`: Kik bot library added. We will be using the official Python package for Kik bots. Make sure you have this line in your requirements.txt: `kik==1.2.0`
 

@@ -19,7 +19,7 @@ Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot fö
 
 3. Om du _redan är klar med Utmaning 2_ och bara vill fortsätta med det projektet:
 
-  1. Gå till <https://github.com/mikaelsvensson/helloworld-klarna/tree/challenge-4-telegram> för att få "inspiration" för de kommande stegen. Kopiera och klistra in så mycket kod som du tycker behövs.
+  1. Gå till <https://github.com/nicevo/helloworld-klarna/tree/challenge-4-telegram> för att få "inspiration" för de kommande stegen. Kopiera och klistra in så mycket kod som du tycker behövs.
 
   2. Uppdatera `app/__init__.py`: Initiera boten med din bots inloggningsuppgifter (en API-nyckel).
 

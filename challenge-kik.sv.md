@@ -22,7 +22,7 @@ Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot fö
 
 3. Om du _redan är klar med Utmaning 2_ och bara vill fortsätta med det projektet:
 
-  1. Gå till <https://github.com/mikaelsvensson/helloworld-klarna/tree/challenge-4-kik> för att få "inspiration" för de kommande stegen. Kopiera och klistra in så mycket kod som du tycker behövs.
+  1. Gå till <https://github.com/nicevo/helloworld-klarna/tree/challenge-4-kik> för att få "inspiration" för de kommande stegen. Kopiera och klistra in så mycket kod som du tycker behövs.
 
   2. Uppdatera `requirements.txt`: Rad för Kiks bot-bibliotek. Vi använder det officiella Python-biblioteket från Kik. Se till så att du har denna rad i din requirements.txt: `kik==1.2.0`
 

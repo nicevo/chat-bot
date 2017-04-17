@@ -4,7 +4,7 @@ The first step makes sure that we know the basics of how to develop web services
 
 We will start with a sample project just to see that you have all the required libraries installed.
 
-On <https://github.com/mikaelsvensson/helloworld-klarna/tree/challenge-1> you find the complete source code for this exercise. Yes, we are cheating a bit by not writing any code ourselves but this is mostly to get started.
+On <https://github.com/nicevo/helloworld-klarna/tree/challenge-1> you find the complete source code for this exercise. Yes, we are cheating a bit by not writing any code ourselves but this is mostly to get started.
 
 ## Step By Step
 

@@ -4,7 +4,7 @@ Första steget är att försäkra oss om att vi kan grunderna i att utveckla web
 
 Vi börjar med ett exempelprojekt bara för att se så att du har alla nödvändiga bibliotek installerade.
 
-På <https://github.com/mikaelsvensson/helloworld-klarna/tree/challenge-1> hittar du all källkod för övningen. Ja, vi fuskar lite genom att inte skriva någon kod själva men det är mest för att komma igång.
+På <https://github.com/nicevo/helloworld-klarna/tree/challenge-1> hittar du all källkod för övningen. Ja, vi fuskar lite genom att inte skriva någon kod själva men det är mest för att komma igång.
 
 ## Steg för steg
 
