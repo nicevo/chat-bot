@@ -1,40 +1,40 @@
 # Challenge 1: Local web service
 
-The first step makes sure that we know the basics of how to develop web services using Python. 
-This will only require Python (and Pip).
+The first step makes sure that we know the basics of how to develop web services using Python. This will only require Python (and Pip).
 
 We will start with a sample project just to see that you have all the required libraries installed.
 
-On https://github.com/mikaelsvensson/helloworld-klarna/tree/challenge-1 you find the complete source 
-code for this exercise. Yes, we are cheating a bit by not writing any code ourselves but this is mostly 
-to get started. 
+On <https://github.com/mikaelsvensson/helloworld-klarna/tree/challenge-1> you find the complete source code for this exercise. Yes, we are cheating a bit by not writing any code ourselves but this is mostly to get started.
 
 ## Step By Step
 
-1.  Download the source code using this link: https://github.com/mikaelsvensson/helloworld-klarna/archive/challenge-1.zip.
-1.  Extract the zip file to a new folder, such as ```helloworld-klarna```.
-1.  Open a console and go to your new project folder
-1.  Install the dependencies by executing this:
-    
-        pip install -r requirements.txt
+1. Download the source code using this link: <https://github.com/nicevo/helloworld-klarna/archive/challenge-1.zip>.
+2. Extract the zip file to a new folder, such as `helloworld-klarna`.
+3. Open a console and go to your new project folder
+4. Install the dependencies by executing this:
 
-1.  Start the service by executing this:
-    
-        python run.py
+  ```
+  pip install -r requirements.txt
+  ```
 
-1.  Open ```http://localhost:5000/time``` in a browser. This should give you the time of the day.
+5. Start the service by executing this:
 
-We now have a web service running on your own computer. Sure, it can only be used by someone sitting at 
-your computer but we’ll fix that in the next step.
+  ```
+  python run.py
+  ```
+
+6. Open `http://localhost:5000/time` in a browser. This should give you the time of the day.
+
+We now have a web service running on your own computer. Sure, it can only be used by someone sitting at your computer but we'll fix that in the next step.
 
 ## A Closer Look
 
-Take some time to explore the source code. Start with ```run.py```, move on to ```app/__init__.py``` and then have a 
-look at ```views.py```.
- 
-We’re using Flask, a web service library for Python, and a lot of information about it can be found on 
-https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world.
+Take some time to explore the source code. Start with `run.py`, move on to `app/__init__.py` and then have a look at `views.py`.
+
+We're using Flask, a web service library for Python, and a lot of information about it can be found on <https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world>.
 
 ## The Next Step
 
 [Go to instructions for Challenge 2](./challenge-heroku.md)
+
+[Back to index](./index.md)
