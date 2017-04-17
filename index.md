@@ -2,18 +2,18 @@
 
 This tutorial enables you to develop a chat bot for either Kik or Telegram.
 
-This is how bots work for both Kik and Telegram:
+This is how bots work for both [Kik](https://www.kik.com/) and [Telegram](https://telegram.org/):
 
-1. Create a bot account for Kik or Telegram. During this simple process you will get an API key. The API key is the bot's password when talking to the messaging platform (i.e. Kik or Telegram).
-2. Implement the messaging platform's bot callback interface as a web service. You then publish this web service on a cloud provider (we will use Heroku in this tutorial).
+1. Create a bot account for Kik or Telegram. As part of the process you will get an API key. The API key is the bot's password when talking to the messaging platform (i.e. Kik or Telegram).
+2. Program a web service that follows the bot API (think of an API is a kind of contract) defined by the messaging provider. This "contract" is called the callback interface. You then publish this web service on a cloud provider (we will use Heroku in this tutorial).
 3. All messages sent to your bot will be delivered to your web service.
 
 There are some things in common regardless of whether or not you go for Kik or Telegram:
 
 - We use a Python library which takes care of "the complicated stuff".
 - We create a web service which will receive all the messages sent to our bot.
-- We don't specify our bot's credentials in the source code (that way we can publish our source code without divulging the bot's credentials, i.e. its secret password).
-- We make sure that the application, i.e. the bot, starts by telling the app company (i.e. Kik or Telegram) that it is alive and can receive messages.
+- We don't specify our bot's credentials in the Python source code. That way we can publish our source code without divulging the bot's credentials, i.e. its secret password.
+- We make sure that the application, i.e. the bot, starts by telling the messaging company (i.e. Kik or Telegram) that it is alive and can receive messages.
 
 Since Kik and Telegram are different apps there are some things that will be different when you develop a bot for one or the other. For this reason the instructions will differ depending on the app you want to support.
 

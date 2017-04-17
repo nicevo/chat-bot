@@ -4,63 +4,39 @@ In order to make our fancy web service (which still only tells the time of the d
 
 ## Step By Step
 
-1. Get started with Heroku, the cloud platform we will be using:
+#### Get started with Heroku, the cloud platform we will be using:
 
-  1. Sign up to get free Heroku account on <https://signup.heroku.com/dc>
+1. Sign up to get free Heroku account on <https://signup.heroku.com/dc>
 
-  2. Install the Heroku CLI from <https://devcenter.heroku.com/articles/heroku-cli> (we use this to manage our Heroku applications)
+1. Install the Heroku CLI from <https://devcenter.heroku.com/articles/heroku-cli> (we use this to manage our Heroku applications)
 
-  3. Install the Heroku Builds plugin for the Heroku CLI (we use this to upload our applications to Heroku):
+1. Install the Heroku Builds plugin for the Heroku CLI (we use this to upload our applications to Heroku):
 
-    ```
-    heroku plugins:install heroku-builds
-    ```
+  ```
+  heroku plugins:install heroku-builds
+  ```
 
-2. If you have _not completed Challenge 1_ and just want to do Challenge 2 right away:
+#### Publish to Heroku-app
+1. If you have _not completed Challenge 1_ you'll need to download and extract (skip this step otherwise): <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> to a new folder, for example `helloworld-klarna`.
 
-  1. Download and extract <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> to a new folder, for example `helloworld-klarna`.
+1. If you have _already completed Challenge 1_ and just want to continue on that project:
 
-3. If you have _already completed Challenge 1_ and just want to continue on that project:
+1. Open a console (terminal window) in your project folder.
 
-  1. Create a file called `Procfile` (no extension, just the name "Procfile") with this content:
-
-    ```
-    web: gunicorn app:application --log-file -
-    ```
-
-    Note the "-" and the end of the line. Also note that `Procfile` must be in the root of your project. This file tells Heroku how your application is started.
-
-  2. Modify `requirements.txt` so that is has these two lines of code:
-
-    ```
-    Flask
-    gunicorn
-    ```
-
-  3. Create an empty file named `.gitignore` the root of your project (note the initial period character). We need this because of a bug in the Heroku Builds plugin (which requires that a file with this exact name exists).
-
-    On a Mac you can create this file using this console command:
-
-    ```
-    touch .gitignore
-    ```
-
-4. Open a console (terminal window) in your project folder.
-
-5. Tell Heroku you want to publish a new application by running this in a console:
+1. Tell Heroku you want to publish a new application by running this in a console:
 
   ```
   heroku apps:create NAME_OF_YOUR_HEROKU_APPLICATION
   ```
 
-  Same examples:
+  Some examples:
 
   ```
   heroku apps:create boatymcboatface
   heroku apps:create happy-marvin
   ```
 
-6. Run this to deploy your application to Heroku:
+1. Run this to deploy your application to Heroku:
 
   ```
   heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
@@ -77,7 +53,9 @@ heroku open
 
 We have a publicly available web service now! Sure, it's not a bot yet but we'll fix that in the next step.
 
-If one does a change to the code, for example renaming "time" to "now", and redeploy:
+#### Make a change to the app and update heroku
+
+Change something in the code, for example try renaming "time" to "now" in the `@application.route...` line, and update the app on heroku:
 
 ```
 heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
