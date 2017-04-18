@@ -17,13 +17,13 @@ In order to make our fancy web service (which still only tells the time of the d
   ```
 
 #### Publish to Heroku-app
-1. If you have _not completed Challenge 1_ you'll need to download and extract (skip this step otherwise): <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> to a new folder, for example `helloworld-klarna`.
+- If you have _not completed Challenge 1_ you'll need to download and extract (skip this step otherwise): <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> to a new folder, for example `helloworld-klarna`.
 
-1. If you have _already completed Challenge 1_ and just want to continue on that project:
+- If you have _already completed Challenge 1_ and just want to continue on that project:
 
-1. Open a console (terminal window) in your project folder.
+- Open a console (terminal window) in your project folder.
 
-1. Tell Heroku you want to publish a new application by running this in a console:
+- Tell Heroku you want to publish a new application by running this in a console:
 
   ```
   heroku apps:create NAME_OF_YOUR_HEROKU_APPLICATION
@@ -36,7 +36,7 @@ In order to make our fancy web service (which still only tells the time of the d
   heroku apps:create happy-marvin
   ```
 
-1. Run this to deploy your application to Heroku:
+- Run this to deploy your application to Heroku:
 
   ```
   heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION

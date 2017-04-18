@@ -8,22 +8,22 @@ On <https://github.com/nicevo/helloworld-klarna/tree/challenge-1> you find the c
 
 ## Step By Step
 
-1. Download the source code using this link: <https://github.com/nicevo/helloworld-klarna/archive/challenge-1.zip>.
-2. Extract the zip file to a new folder, such as `helloworld-klarna`.
-3. Open a console and go to your new project folder
-4. Install the dependencies by executing this:
+- Download the source code using this link: <https://github.com/nicevo/helloworld-klarna/archive/challenge-1.zip>.
+- Extract the zip file to a new folder, such as `helloworld-klarna`.
+- Open a console and go to your new project folder
+- Install the dependencies by executing this:
 
   ```
   pip install -r requirements.txt
   ```
 
-5. Start the service by executing this:
+- Start the service by executing this:
 
   ```
   python run.py
   ```
 
-6. Open `http://localhost:5000/time` in a browser. This should give you the time of the day.
+- Open `http://localhost:5000/time` in a browser. This should give you the time of the day.
 
 We now have a web service running on your own computer. Sure, it can only be used by someone sitting at your computer but we'll fix that in the next step.
 

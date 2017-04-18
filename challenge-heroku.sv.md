@@ -4,25 +4,25 @@ För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) 
 
 ## Steg för steg
 
-1. Kom igång med Heroku, molnplattformen vi kommer använda oss av:
+- Kom igång med Heroku, molnplattformen vi kommer använda oss av:
 
-  1. Skapa dig ett gratis Heroku-konto på <https://signup.heroku.com/dc>
+  - Skapa dig ett gratis Heroku-konto på <https://signup.heroku.com/dc>
 
-  2. Installera Heroku-verktygen från <https://devcenter.heroku.com/articles/heroku-cli> (vi kommer använda detta för att arbeta med vår Heroku-app)
+  - Installera Heroku-verktygen från <https://devcenter.heroku.com/articles/heroku-cli> (vi kommer använda detta för att arbeta med vår Heroku-app)
 
-  3. Installera tillägget Heroku Builds för Heroku-verktygen (används för att ladda upp vår app till Heroku):
+  - Installera tillägget Heroku Builds för Heroku-verktygen (används för att ladda upp vår app till Heroku):
 
     ```
     heroku plugins:install heroku-builds
     ```
 
-2. Om du _inte har gjort Utmaning 1_ och bara vill göra Utmaning 2 direkt:
+- Om du _inte har gjort Utmaning 1_ och bara vill göra Utmaning 2 direkt:
 
-  1. Ladda ner och packa upp <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> till en ny mapp, exempelvis `helloworld-klarna`.
+  - Ladda ner och packa upp <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> till en ny mapp, exempelvis `helloworld-klarna`.
 
-3. Om du _redan är klar med Utmaning 1_ och bara vill fortsätta med det projektet:
+- Om du _redan är klar med Utmaning 1_ och bara vill fortsätta med det projektet:
 
-  1. Skapa en fil som heter `Procfile` (ingen filändelse, bara "Procfile") med följande innehåll:
+  - Skapa en fil som heter `Procfile` (ingen filändelse, bara "Procfile") med följande innehåll:
 
     ```
     web: gunicorn app:application --log-file -
@@ -30,14 +30,14 @@ För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) 
 
     Notera "-" sist på raden. Notera också att `Procfile` måste finns i "roten" på ditt projekt. `Procfile` berättar för Heroku hur vår webbtjänst startas.
 
-  2. Ändra `requirements.txt` så att den har dessa två rader:
+  - Ändra `requirements.txt` så att den har dessa två rader:
 
     ```
     Flask
     gunicorn
     ```
 
-  3. Skapa en tom file som heter `.gitignore` i "roten" på ditt projekt (notera punkten i början på filnamnet). Vi behöver denna fil pga. en bugg i verktygt Heroku Builds plugin (som alltså kräver att det finns en fil med just detta namn).
+  - Skapa en tom file som heter `.gitignore` i "roten" på ditt projekt (notera punkten i början på filnamnet). Vi behöver denna fil pga. en bugg i verktygt Heroku Builds plugin (som alltså kräver att det finns en fil med just detta namn).
 
     På en Mac kan du skapa filen med det här terminalkommandot:
 
@@ -45,9 +45,9 @@ För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) 
     touch .gitignore
     ```
 
-4. Öppna en terminal (kommandoprompt) i din projektmapp.
+- Öppna en terminal (kommandoprompt) i din projektmapp.
 
-5. Skapa en ny applikation på Heroku mha. detta kommando:
+- Skapa en ny applikation på Heroku mha. detta kommando:
 
   ```
   heroku apps:create NAMN_PA_DIN_HEROKU_APPLIKATION
@@ -60,7 +60,7 @@ För att vår fina webbtjänst (som fortfarande bara berättar vad klockan är) 
   heroku apps:create happy-marvin
   ```
 
-6. Kör det här kommandot för att ladda upp, och starta, din app:
+- Kör det här kommandot för att ladda upp, och starta, din app:
 
   ```
   heroku builds:create --app NAMN_PA_DIN_HEROKU_APPLIKATION

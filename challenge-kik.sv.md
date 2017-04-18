@@ -4,44 +4,44 @@ Vi måste nu berätta för Kik eller Telegram att vi vill programmera en bot fö
 
 ## Steg för steg
 
-1. Berätta för Kik att du vill skapa en bot
+- Berätta för Kik att du vill skapa en bot
 
-  1. På telefon: Starta Kik.
-  2. På dator: Gå till <https://dev.kik.com/>.
-  3. På telefon: Scanna Kik-koden på Kik-hemsidan.
-  4. På telefon: boten Botsworth kommer börja chatta med dig och fråga vad du vill att din bot ska heta.
-  5. På dator: Klicka på Log in-knappen på Kiks hemsida och scanna Kik-koden med appen. Gå sedan till kontokonfigurationen (fortfarande på datorn) och leta upp din bots "API key" (på <https://dev.kik.com/#/engine>). API-nyckeln är din bots lösenord.
-  6. På daton: Spara API-nyckeln i en textfil, så att vi kan använda den senare.
-  7. Vi är nu redo att börja utveckla vår Kik-bot! Gå vidare till nästa steg.
+  - På telefon: Starta Kik.
+  - På dator: Gå till <https://dev.kik.com/>.
+  - På telefon: Scanna Kik-koden på Kik-hemsidan.
+  - På telefon: boten Botsworth kommer börja chatta med dig och fråga vad du vill att din bot ska heta.
+  - På dator: Klicka på Log in-knappen på Kiks hemsida och scanna Kik-koden med appen. Gå sedan till kontokonfigurationen (fortfarande på datorn) och leta upp din bots "API key" (på <https://dev.kik.com/#/engine>). API-nyckeln är din bots lösenord.
+  - På daton: Spara API-nyckeln i en textfil, så att vi kan använda den senare.
+  - Vi är nu redo att börja utveckla vår Kik-bot! Gå vidare till nästa steg.
 
-2. Om du _inte har gjort Utmaning 2_ och bara vill göra Utmaning 3 direkt:
+- Om du _inte har gjort Utmaning 2_ och bara vill göra Utmaning 3 direkt:
 
-  1. Gör stegen "Kom igång med Heroku" från [Utmaning 2](./challenge-heroku.sv.md).
+  - Gör stegen "Kom igång med Heroku" från [Utmaning 2](./challenge-heroku.sv.md).
 
-  2. Ladda ner och packa upp <https://github.com/nicevo/helloworld-klarna/archive/challenge-4-kik.zip> till en ny mapp, exempelvis `helloworld-klarna`.
+  - Ladda ner och packa upp <https://github.com/nicevo/helloworld-klarna/archive/challenge-4-kik.zip> till en ny mapp, exempelvis `helloworld-klarna`.
 
-3. Om du _redan är klar med Utmaning 2_ och bara vill fortsätta med det projektet:
+- Om du _redan är klar med Utmaning 2_ och bara vill fortsätta med det projektet:
 
-  1. Gå till <https://github.com/nicevo/helloworld-klarna/tree/challenge-4-kik> för att få "inspiration" för de kommande stegen. Kopiera och klistra in så mycket kod som du tycker behövs.
+  - Gå till <https://github.com/nicevo/helloworld-klarna/tree/challenge-4-kik> för att få "inspiration" för de kommande stegen. Kopiera och klistra in så mycket kod som du tycker behövs.
 
-  2. Uppdatera `requirements.txt`: Rad för Kiks bot-bibliotek. Vi använder det officiella Python-biblioteket från Kik. Se till så att du har denna rad i din requirements.txt: `kik==1.2.0`
+  - Uppdatera `requirements.txt`: Rad för Kiks bot-bibliotek. Vi använder det officiella Python-biblioteket från Kik. Se till så att du har denna rad i din requirements.txt: `kik==1.2.0`
 
-  3. Uppdatera `app/__init__.py`: Här måste du initiera din bot med din bots användarnamn, din bots lösenord och din bots Heroku-address, dvs. den "callback address" som kommer ta emot alla
+  - Uppdatera `app/__init__.py`: Här måste du initiera din bot med din bots användarnamn, din bots lösenord och din bots Heroku-address, dvs. den "callback address" som kommer ta emot alla
 
     ```
     inkommande meddelanden. Ändra webhook-parametern för att matcha namnet på din Heroku-applikation.
     ```
 
-  4. Uppdatera `app/views.py`: Innehåller funktionaliteten som tar hand om alla inkommande meddelanden.
+  - Uppdatera `app/views.py`: Innehåller funktionaliteten som tar hand om alla inkommande meddelanden.
 
-4. Ange din bots inloggningsuppgifter (botens användarnamn och API-nyckel är de du tidigare hittade på <https://dev.kik.com/#/engine>) i din Heroku-applikation genom att köra följande kommandon:
+- Ange din bots inloggningsuppgifter (botens användarnamn och API-nyckel är de du tidigare hittade på <https://dev.kik.com/#/engine>) i din Heroku-applikation genom att köra följande kommandon:
 
   ```
   heroku config:set KIK_BOT_USERNAME=your-bot-username --app NAMN_PA_DIN_HEROKU_APPLIKATION
   heroku config:set KIK_BOT_APIKEY=your-bot-api-key --app NAMN_PA_DIN_HEROKU_APPLIKATION
   ```
 
-5. Ladda upp applikationen till Heroku precis som tidigare:
+- Ladda upp applikationen till Heroku precis som tidigare:
 
   ```
   heroku builds:create --app NAMN_PA_DIN_HEROKU_APPLIKATION

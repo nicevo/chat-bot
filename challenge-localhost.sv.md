@@ -8,22 +8,22 @@ På <https://github.com/nicevo/helloworld-klarna/tree/challenge-1> hittar du all
 
 ## Steg för steg
 
-1. Ladda ner källkoden härifrån: <https://github.com/nicevo/helloworld-klarna/archive/challenge-1.zip>.
-2. Packa upp zip-filen i en ny mapp, exempelvis `helloworld-klarna`.
-3. Öppna en kommandoprompt och gå till din projektmapp.
-4. Installera biblioteken vi behöver genom att köra detta:
+- Ladda ner källkoden härifrån: <https://github.com/nicevo/helloworld-klarna/archive/challenge-1.zip>.
+- Packa upp zip-filen i en ny mapp, exempelvis `helloworld-klarna`.
+- Öppna en kommandoprompt och gå till din projektmapp.
+- Installera biblioteken vi behöver genom att köra detta:
 
   ```
   pip install -r requirements.txt
   ```
 
-5. Starta webbtjänsten genom att köra detta:
+- Starta webbtjänsten genom att köra detta:
 
   ```
   python run.py
   ```
 
-6. Öppna <http://localhost:5000/time> i en webbläsare. Detta borde ge dig aktuellt klockslag.
+- Öppna <http://localhost:5000/time> i en webbläsare. Detta borde ge dig aktuellt klockslag.
 
 Vi har nu en webbtjänst snurrandes på vår egen dator. Visst, den kan bara användas av någon som sitter vid just denna dator men det fixar vi i nästa steg.
 
