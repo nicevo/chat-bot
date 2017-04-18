@@ -6,12 +6,16 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
 
 ### Tell Kik you want to create a bot
 
-*On phone:* Start Kik on your phone.
-*On computer:* Go to <https://dev.kik.com/> on your computer.
-*On phone:* Scan the Kik code with the Kik app.
-*On phone:* The user Botsworth will start chatting with you and ask you what the bot should be called.
-*On computer:* Click the Log in-button on Kik's web page and scan the Kik code with the app. Then go to the account Configuration (still on your computer) to find your new bot's API key (on <https://dev.kik.com/#/engine>). The API key is your bot's password.
-*On computer:* Save the API key in a text file, for later use.
+- **On phone:** Start Kik on your phone.
+
+- **On computer:** Go to <https://dev.kik.com/>.
+
+- **On phone:** Scan the Kik code with the Kik app.
+- **On phone:** The user Botsworth will start chatting with you and ask you what the bot should be called.
+
+- **On computer:** Click the Log in-button on Kik's web page and scan the Kik code with the app. Then go to the account Configuration (still on your computer) to find your new bot's API key (on <https://dev.kik.com/#/engine>). The API key is your bot's password.
+- **On computer:** Save the API key in a text file, for later use.
+
 We're now ready to start developing our Kik bot! Move on to the next step.
 
 ### Done Challenge 2?
@@ -24,7 +28,7 @@ If you have _not completed Challenge 2_ and just want to do Challenge 3 right aw
 
 - Download and extract <https://github.com/nicevo/helloworld-klarna/archive/challenge-4-kik.zip> to a new folder, for example `helloworld-klarna`.
 
-- Skip to *Add Kik credentials in your app*
+- Skip to **Add Kik credentials in your app**
 
 #### No and want to continue on that project
 

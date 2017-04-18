@@ -6,11 +6,13 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
 
 ### Tell Telegram you want to create a bot
 
-*On phone:* Start Telegram.
-*On phone:* Start chatting with the bot BotFather.
-*On phone:* Answer BotFather's questions.
-*On phone:* After a couple of questions you will get a message starting with "Done! Congratulations...". This message will contain your API key (i.e. the password for your bot).
-*On computer:* Save the API key in a text file, for later use.
+- **On phone:** Start Telegram.
+- **On phone:** Start chatting with the bot BotFather.
+- **On phone:** Answer BotFather's questions.
+- **On phone:** After a couple of questions you will get a message starting with "Done! Congratulations...". This message will contain your API key (i.e. the password for your bot).
+
+- **On computer:** Save the API key in a text file, for later use.
+
 We're now ready to start developing our Telegram bot! Move on to the next step.
 
 ### Done Challenge 2?
@@ -22,7 +24,7 @@ If you have _not completed Challenge 2_ and just want to do Challenge 3 right aw
 - Do the "Get started with Heroku" steps from [Challenge 2](./challenge-heroku.md).
 
 - Download and extract <https://github.com/nicevo/helloworld-klarna/archive/challenge-4-telegram.zip> to a new folder, for example `helloworld-klarna`.
-- Skip to *Add Telegram credentials in your app*
+- Skip to **Add Telegram credentials in your app**
 
 #### No and want to continue on that project
 
