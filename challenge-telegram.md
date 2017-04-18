@@ -15,12 +15,16 @@ We're now ready to start developing our Telegram bot! Move on to the next step.
 
 ### Done Challenge 2?
 
+#### Yes and want to do Challenge 3 right away
+
 If you have _not completed Challenge 2_ and just want to do Challenge 3 right away:
 
 - Do the "Get started with Heroku" steps from [Challenge 2](./challenge-heroku.md).
 
 - Download and extract <https://github.com/nicevo/helloworld-klarna/archive/challenge-4-telegram.zip> to a new folder, for example `helloworld-klarna`.
-- Skip to _Add Telegram credentials in your app_
+- Skip to *Add Telegram credentials in your app*
+
+#### No and want to continue on that project
 
 If you have _already completed Challenge 2_ and just want to continue on that project:
 

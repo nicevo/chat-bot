@@ -16,17 +16,19 @@ In order to make our fancy web service (which still only tells the time of the d
   heroku plugins:install heroku-builds
   ```
 
-### Publish to Heroku-app
+### Done Challenge 1?
 
 #### Not done Challenge 1 or want to start fresh
 If you have _not completed Challenge 1_ you'll need to download and extract (skip this step otherwise): <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> to a new folder, for example `helloworld-klarna`.
 
-Skip the next paragraph
+Skip to *Publish to Heroku-app*
 
 #### Done Challenge 1 and want to reuse code
 If you have _already completed Challenge 1_ and just want to continue on that project:
 
 - Open a console (terminal window) in your project folder.
+
+### Publish to Heroku-app
 
 - Tell Heroku you want to publish a new application by running this in a console:
 
