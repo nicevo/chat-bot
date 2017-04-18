@@ -4,7 +4,7 @@ In order to make our fancy web service (which still only tells the time of the d
 
 ## Step By Step
 
-#### Get started with Heroku, the cloud platform we will be using:
+### Get started with Heroku, the cloud platform we will be using:
 
 1. Sign up to get free Heroku account on <https://signup.heroku.com/dc>
 
@@ -16,10 +16,15 @@ In order to make our fancy web service (which still only tells the time of the d
   heroku plugins:install heroku-builds
   ```
 
-#### Publish to Heroku-app
-- If you have _not completed Challenge 1_ you'll need to download and extract (skip this step otherwise): <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> to a new folder, for example `helloworld-klarna`.
+### Publish to Heroku-app
 
-- If you have _already completed Challenge 1_ and just want to continue on that project:
+#### Not done Challenge 1 or want to start fresh
+If you have _not completed Challenge 1_ you'll need to download and extract (skip this step otherwise): <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> to a new folder, for example `helloworld-klarna`.
+
+Skip the next paragraph
+
+#### Done Challenge 1 and want to reuse code
+If you have _already completed Challenge 1_ and just want to continue on that project:
 
 - Open a console (terminal window) in your project folder.
 
@@ -53,7 +58,7 @@ heroku open
 
 We have a publicly available web service now! Sure, it's not a bot yet but we'll fix that in the next step.
 
-#### Make a change to the app and update heroku
+### Make a change to the app and update heroku
 
 Change something in the code, for example try renaming "time" to "now" in the `@application.route...` line, and update the app on heroku:
 
