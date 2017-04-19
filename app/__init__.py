@@ -2,6 +2,7 @@ import os
 
 from flask import Flask
 from twx.botapi import TelegramBot
+from flask_sqlalchemy import SQLAlchemy
 
 bot_api_key = os.environ.get('TELEGRAM_BOT_APIKEY')
 
@@ -9,8 +10,10 @@ bot = TelegramBot(bot_api_key)
 
 application = Flask(__name__)
 
-from app import views
+application.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+db = SQLAlchemy(application)
 
+from app import views
 if os.environ.get('HEROKU') is not None:
     import logging
 
