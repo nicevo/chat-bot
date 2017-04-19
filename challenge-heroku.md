@@ -4,7 +4,9 @@ In order to make our fancy web service (which still only tells the time of the d
 
 ## Step By Step
 
-### Get started with Heroku, the cloud platform we will be using:
+### Getting started with Heroku
+
+Heroku is the cloud platform we will be using. Let's start by creating an account and installing the Heroku CLI tool.
 
 1. Sign up to get free Heroku account on <https://signup.heroku.com/dc>
 
@@ -16,51 +18,37 @@ In order to make our fancy web service (which still only tells the time of the d
   heroku plugins:install heroku-builds
   ```
 
-### Done Challenge 1?
+### Publishing to Heroku
 
-#### Not done Challenge 1 or want to start fresh
-If you have _not completed Challenge 1_ you'll need to download and extract (skip this step otherwise): <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> to a new folder, for example `helloworld-klarna`.
+**Note**: If you _have not completed Challenge 1_ you'll need to download code from here <https://github.com/nicevo/helloworld-klarna/archive/challenge-2.zip> and extract it to a new folder, for example `helloworld-klarna`.
 
-Skip to **Publish to Heroku-app**
-
-#### Done Challenge 1 and want to reuse code
-If you have _already completed Challenge 1_ and just want to continue on that project:
-
-- Open a console (terminal window) in your project folder.
-
-### Publish to Heroku-app
-
-- Tell Heroku you want to publish a new application by running this in a console:
-
-  ```
-  heroku apps:create NAME_OF_YOUR_HEROKU_APPLICATION
-  ```
-
-  Some examples:
-
-  ```
-  heroku apps:create boatymcboatface
-  heroku apps:create happy-marvin
-  ```
-
-- Run this to deploy your application to Heroku:
-
-  ```
-  heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
-  ```
-
-You should now be able open a browser and get the current time by visiting <https://NAME_OF_YOUR_HEROKU_APPLICATION.herokuapp.com/time>.
-
-If it does not work you may have to run these two commands:
-
+1. Open a console (terminal window) in your project folder and tell Heroku to publish a new application by running this command:
 ```
+heroku apps:create NAME_OF_YOUR_HEROKU_APPLICATION
+```
+Choose your own in place of `NAME_OF_YOUR_HEROKU_APPLICATION`, for example:
+```
+heroku apps:create boatymcboatface
+heroku apps:create happy-marvin
+```
+
+1. Now Run this to deploy (i.e. publish) your application to Heroku:
+```
+heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
 heroku ps:scale web=1
+```
+
+1. You should now be able open a browser and get the current time by visiting <https://NAME_OF_YOUR_HEROKU_APPLICATION.herokuapp.com/time>.
+or just type
+```
 heroku open
 ```
 
-We have a publicly available web service now! Sure, it's not a bot yet but we'll fix that in the next step.
+Congratulations! You just created a publicly available web service.
 
-### Make a change to the app and update heroku
+Try to open the app from your phone as well. Sure, it's not a bot yet but we'll fix that in the next step.
+
+### Chaning the application and updating Heroku
 
 Change something in the code, for example try renaming "time" to "now" in the `@application.route...` line, and update the app on heroku:
 
