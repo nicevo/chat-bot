@@ -26,46 +26,44 @@ def show_time():
 
 @application.route('/incoming', methods=['POST'])
 def incoming():
-    j = json.loads(request.get_data())
-    m = j['message']
-    msg = Message.from_result(m)
-    print 'Raw message:', msg
-
+    requst_json = json.loads(request.get_data())
+    message = Message.from_result(requst_json['message'])
+    print 'Raw message:', message
     try:
-        print 'Received this message from user %d (%s): %s' % (msg.sender.id, msg.sender.first_name, msg.text)
-        chat_id = msg.chat.id
-        message = msg.text
-        if message.lower() == '/start':
-            response = on_start(chat_id)
-        else:
-            response = on_myname(chat_id, msg.text)
+        on_message(message)
     except Exception as e:
         print "ERROR: ", e.message
 
     return Response(status=200)
 
 
-def on_start(chat_id):
-    print '/start received, chat_id=%i' % chat_id
-    message = "Hi, what's your name?"
-    return respond_with_message(chat_id, message)
+def on_message(message):
+    print 'Received this message from user %d (%s): %s' % (message.sender.id, message.sender.first_name, message.text)
+    chat_id = message.chat.id
+    register_player(chat_id, message.sender)
+    response = geography_quizz(chat_id)
+    return response
 
 
-def on_myname(chat_id, text):
-    print 'Name received, chat_id=%i' % chat_id
+def register_player(chat_id, sender):
+    print 'Figuring out player name, chat_id=%i' % chat_id
+    name = sender.first_name
     with application.app_context():
-        player = db.session.query(models.Player).filter_by(name=text).first()
+        player = db.session.query(models.Player).filter_by(name=name).first()
         if player is None:
-            player = models.Player(name=text, visits=1)
+            player = models.Player(name=name, visits=1)
             db.session.add(player)
             db.session.commit()
-            respond_with_message(chat_id, "Welcome to your first chat " + player.name)
+            respond_with_message(chat_id, "Welcome %s! It's great to finally meet you." % player.name)
         else:
             player.visits += 1
             db.session.commit()
-            respond_with_message(chat_id, "Nice to see you again " + player.name)
+            respond_with_message(chat_id, "Nice to see you again %s. This is your %ith visit" % (player.name, player.visits))
 
-        respond_with_message(chat_id, "Let's learn some Geography!")
+
+def geography_quizz(chat_id):
+    respond_with_message(chat_id, "Let's learn some Geography!")
+    with application.app_context():
         capitals = db.session.query(models.Capital).all()
         capital = random.choice(capitals)
         return respond_with_message(chat_id, "The captial of %s is %s" % (capital.country, capital.name))
