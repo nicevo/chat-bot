@@ -1,7 +1,7 @@
 # How To Develop A Bot
 
 This tutorial enables you to develop a chat bot for either Kik or Telegram.
-
+[Check the prerequisites](./step-prerequisites.md)
 
 # Steps
 
