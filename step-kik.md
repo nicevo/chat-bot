@@ -17,7 +17,7 @@ We now need to tell Kik or Telegram that we want to develop a bot for their plat
 We're now ready to start developing our Kik bot! Move on to the next step.
 
 ## Basic code
-- [Download and extract code to a new folder](https://github.com/nicevo/helloworld-klarna/archive/step-3-kik.zip)
+- [Download and extract code to a new folder](https://github.com/nicevo/helloworld-klarna/archive/step-kik.zip)
 - Change to the folder and do the same commands from [Step 2](./step-heroku.md):
 ```
 heroku apps:create
@@ -48,7 +48,7 @@ heroku logs -t --app NAME_OF_YOUR_HEROKU_APPLICATION
 ```
 ## A Closer Look
 
-Want to know more about Telegram bots? Check out <http://kik.readthedocs.io/en/latest/index.html>.
+Want to know more about Kik bots? Check out <http://kik.readthedocs.io/en/latest/index.html>.
 
 That is it, or maybe just the beginning!?
 
