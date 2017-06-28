@@ -2,7 +2,7 @@
 
 You must have this installed on your computer:
 
-- Python 2.7 from <https://www.python.org/downloads>.
+- Python 3 from <https://www.python.org/downloads>.
   ```
   python --version
   ```
