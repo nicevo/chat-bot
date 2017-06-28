@@ -1,4 +1,4 @@
-# Klarna's Hello World Challenge: How To Develop A Bot
+# Klarna's Hello World Tutorial - How To Develop A Chat Bot
 
 This is a tutorial for the Swedish [Hello World!](https://helloworld.se/) non-profit aiming to promote digital creativity. With the help of this guide you will develop a chat bot for either [Kik](https://www.kik.com/) or [Telegram](https://telegram.org/).
 
