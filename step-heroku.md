@@ -8,7 +8,7 @@ Heroku is the cloud platform we will be using. Let's start by creating an accoun
 
 - [Sign up to get free Heroku account](https://signup.heroku.com/dc)
 
-- [Install the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)(we use this to manage our Heroku applications)
+- [Install the Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up)(we use this to manage our Heroku applications)
 
 - Install the Heroku Builds plugin for the Heroku CLI (we use this to upload our applications to Heroku):
   ```
