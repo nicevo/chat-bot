@@ -42,6 +42,12 @@ Want to know more about Telegram bots? Check out <https://core.telegram.org/bots
 
 That is it, or maybe just the beginning!?
 
-You now have a fully functional bot! It doesn't do much yet but now it's up to you to make it amazing!
+You now have a fully functional bot!
+
+## Next steps
+
+In `app/views.py` there is a function called `process_text`. Use that to change the text and make the bot smarter.
+
+If you want something to get you started you can try these [ideas on chat bots](./bots-ideas.md).`
 
 [Back to index](./index.md)
