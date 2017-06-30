@@ -26,13 +26,13 @@ def get_certificate():
 
 def init_bot(telegram_bot):
     telegram_bot.update_bot_info().wait()
-    print 'Starting bot %s' % telegram_bot.username
+    print('Starting bot %s' % telegram_bot.username)
     certificate = get_certificate()
     telegram_bot.set_webhook(
         url='https://A_NAME_OF_YOUR_CHOICE.herokuapp.com/incoming',
         certificate=certificate,
     ).wait()
-    print 'Webhook configured'
+    print('Webhook configured')
 
 
 if os.environ.get('HEROKU') is not None:
@@ -41,4 +41,4 @@ if os.environ.get('HEROKU') is not None:
 try:
     init_bot(bot)
 except Exception as e:
-    print e
+    print(e)
