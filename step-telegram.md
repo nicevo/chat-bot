@@ -20,9 +20,6 @@ We're now ready to start developing our Telegram bot! Move on to the next step.
 - Change to the folder and do the same commands from [Step 2](./step-heroku.md):
 ```
 heroku apps:create
-heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
-heroku ps:scale web=1 --app NAME_OF_YOUR_HEROKU_APPLICATION
-heroku open --app NAME_OF_YOUR_HEROKU_APPLICATION
 ```
 - Open `init_webhook.py` and make sure the URL of your application name matches what is in the `set_webhook` call.
 - Store your Telegram bot credentials (i.e. the API key sent to you by BotFather) in your Heroku application by entering this command in your terminal:
@@ -32,6 +29,8 @@ heroku config:set TELEGRAM_BOT_APIKEY=your-bot-api-key --app NAME_OF_YOUR_HEROKU
 - Re-deploy to Heroku using the same command as before:
 ```
 heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
+heroku ps:scale web=1 --app NAME_OF_YOUR_HEROKU_APPLICATION
+heroku open --app NAME_OF_YOUR_HEROKU_APPLICATION
 ```
 - Start chatting with your bot. You should now be able to find your bot in Telegram by searching for it using the name you sent to BotFather earlier. 
 - Verify that it sends back everything you send to it.

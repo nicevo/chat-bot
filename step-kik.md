@@ -21,9 +21,6 @@ We're now ready to start developing our Kik bot! Move on to the next step.
 - Change to the folder and do the same commands from [Step 2](./step-heroku.md):
 ```
 heroku apps:create
-heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
-heroku ps:scale web=1 --app NAME_OF_YOUR_HEROKU_APPLICATION
-heroku open --app NAME_OF_YOUR_HEROKU_APPLICATION
 ```
 - Update the "callback address" to which Kik should send incoming messages `app/__init__.py`. Change the webhook parameter to match your Heroku app name (NAME_OF_YOUR_HEROKU_APPLICATION).
 - Add [Kik bot username and API key](https://dev.kik.com/#/engine) in your app by entering these commands in your terminal:
@@ -34,6 +31,8 @@ heroku config:set KIK_BOT_APIKEY=your-bot-api-key --app NAME_OF_YOUR_HEROKU_APPL
 - Re-deploy to Heroku using the same command as before:
 ```
 heroku builds:create --app NAME_OF_YOUR_HEROKU_APPLICATION
+heroku ps:scale web=1 --app NAME_OF_YOUR_HEROKU_APPLICATION
+heroku open --app NAME_OF_YOUR_HEROKU_APPLICATION
 ```
 - Start chatting with your bot. You should now be able to find your bot in Kik by searching for it using the name you sent to Botsworth earlier. 
 - Verify that it sends back everything you send to it.
